@@ -1,0 +1,50 @@
+/* Estilos generales */
+body {
+    background-image: url('fondo.avif');
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+}
+
+
+header {
+    text-align: center;
+    margin-top: 20px;
+}
+
+header h1 {
+    font-size: 2.5em;
+    color: #fcfbfb;
+}
+
+#inicio-link {
+    font-size: 1.2em;
+    color: #0066cc;
+    text-decoration: none;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+#carrusel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+#carrusel img {
+    max-width: 80%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgb(255, 255, 255);
+}
+
+#concepto {
+    font-size: 2.5em;
+    text-align: center;
+    font-size: 1.2em;
+    margin-top: 20px;
+    color: #0e0000;
+}

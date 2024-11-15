@@ -1,0 +1,589 @@
+/* Estilos Generales */
+/* Establecer imagen de fondo para toda la página */
+body {
+    background-image: url('fondo.avif'); /* Ruta de la imagen */
+    background-size: cover; /* Hace que la imagen cubra toda la pantalla */
+    background-position: center center; /* Centra la imagen */
+    background-attachment: fixed; /* Fija la imagen al fondo al hacer scroll */
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif; /* Puedes cambiar la fuente según prefieras */
+}
+
+/* Resto de tu código CSS sigue igual */
+
+
+header {
+    background-color: #FF6B6B;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+/* Estilos de Navegación */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #FFD700;
+}
+
+/* Estilo de las secciones */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.card {
+    background-color: #FFF1C1;
+    width: 200px;
+    margin: 15px;
+    padding: 15px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Estilos para el Carrusel */
+.carousel {
+    overflow: hidden;
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+.carousel-images {
+    display: flex;
+    width: calc(100% * 5);
+    animation: slide 10s infinite linear;
+}
+
+.carousel-images img {
+    width: 100%;
+    height: auto;
+}
+
+/* Animación del carrusel */
+@keyframes slide {
+    0% { transform: translateX(0); }
+    33% { transform: translateX(-100%); }
+    66% { transform: translateX(-200%); }
+    100% { transform: translateX(0); }
+}
+
+/* Estilos del Catálogo */
+.catalogo {
+    text-align: center;
+    padding: 20px;
+    background-color: #FFEDD5;
+}
+
+.catalogo h2 {
+    font-size: 2em;
+    color: #FF6B6B;
+}
+
+/* Footer */
+footer {
+    background-color: #FF6B6B;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+/* Recuadros de Golosinas */
+.recuadros {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.recuadro {
+    width: 180px;
+    background-color: #FFABAB;
+    border-radius: 15px;
+    text-align: center;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.recuadro:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.recuadro img {
+    width: 100%;
+    border-bottom: 2px solid #FF6B6B;
+}
+
+.recuadro h3 {
+    font-size: 1.3em;
+    color: white;
+    margin: 10px 0 5px;
+}
+
+.recuadro p {
+    color: #333;
+    font-size: 0.9em;
+    margin: 0 10px 10px;
+}
+/* Sección de Historia */
+.historia {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    background-color: #FFF1C1;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 30px auto;
+    max-width: 800px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.texto-historia {
+    max-width: 300px;
+    text-align: center;
+}
+
+.texto-historia h2 {
+    font-size: 1.8em;
+    color: #FF6B6B;
+    margin-bottom: 10px;
+}
+
+.texto-historia p {
+    color: #333;
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+/* Carrusel de Imágenes */
+.carrusel-historia {
+    overflow: hidden;
+    width: 200px;
+    border-radius: 15px;
+}
+
+.carrusel-imagenes {
+    display: flex;
+    width: calc(100% * 3);
+    animation: slide-history 9s infinite linear;
+}
+
+.carrusel-imagenes img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+}
+
+/* Animación del Carrusel */
+@keyframes slide-history {
+    0% { transform: translateX(0); }
+    33% { transform: translateX(-100%); }
+    66% { transform: translateX(-200%); }
+    100% { transform: translateX(0); }
+}
+.goloso-del-mes {
+    text-align: center;
+    background-color: #FFEB3B;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.goloso-del-mes h2 {
+    color: #FF6B6B;
+}
+
+.goloso-del-mes img {
+    width: 300px;
+    height: auto;
+    border-radius: 15px;
+    margin-top: 20px;
+}
+
+.goloso-del-mes p {
+    font-size: 1.1em;
+    margin-top: 15px;
+    color: #333;
+}
+
+.boton {
+    text-decoration: none;
+    background-color: #FF6B6B;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1.2em;
+    margin-top: 15px;
+}
+/* Estilo de la Galería */
+.galeria {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #FFEB3B;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-top: 40px;
+}
+
+.galeria h2 {
+    color: #FF6B6B;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.imagenes-galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
+.imagen-item {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.imagen-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-bottom: 3px solid #FF6B6B;
+    transition: transform 0.3s ease;
+}
+
+.imagen-item img:hover {
+    transform: scale(1.05);
+}
+/* Estilo de Historia de la Marca */
+.historia-marca {
+    background-color: #FFF1C1;
+    border-radius: 15px;
+    padding: 40px 20px;
+    margin: 30px auto;
+    max-width: 1000px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.historia-marca h2 {
+    color: #FF6B6B;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.historia-contenido {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.historia-imagen {
+    width: 40%;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.historia-texto {
+    width: 55%;
+    text-align: left;
+}
+
+.historia-texto p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #333;
+}
+
+.boton-historia {
+    text-decoration: none;
+    background-color: #FF6B6B;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1.2em;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.boton-historia:hover {
+    background-color: #FF3B3B;
+}
+.trivia {
+    background-color: #FFEB3B;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.trivia h2 {
+    color: #FF6B6B;
+}
+
+.trivia label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.trivia input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.trivia button {
+    background-color: #FF6B6B;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.trivia button:hover {
+    background-color: #FF3B3B;
+}
+/* Estilo del Ranking de Golosinas */
+.ranking-golosinas {
+    background-color: #FFEB3B;
+    border-radius: 15px;
+    padding: 30px 20px;
+    margin: 30px auto;
+    text-align: center;
+    max-width: 700px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.ranking-golosinas h2 {
+    color: #FF6B6B;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.ranking-golosinas p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+
+.ranking-golosinas label {
+    display: block;
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+.ranking-golosinas input {
+    margin-left: 10px;
+    transform: scale(1.3);
+}
+
+.ranking-golosinas button {
+    background-color: #FF6B6B;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1.2em;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.ranking-golosinas button:hover {
+    background-color: #FF3B3B;
+}
+
+#resultados {
+    margin-top: 20px;
+    font-size: 1.5em;
+    color: #333;
+}
+
+#resultados ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#resultados li {
+    padding: 5px 0;
+}
+/* Estilo para la Sección de Videos */
+.seccion-videos {
+    background-color: #FFEB3B;
+    border-radius: 15px;
+    padding: 30px 20px;
+    margin: 30px auto;
+    text-align: center;
+    max-width: 1000px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.seccion-videos h2 {
+    color: #FF6B6B;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.seccion-videos p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+
+.videos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
+.video {
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.video iframe {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.video h3 {
+    margin-top: 10px;
+    font-size: 1.2em;
+    color: #333;
+}
+/* Estilo para la Sección de Videos */
+.seccion-videos {
+    background-color: #FFEB3B;
+    border-radius: 15px;
+    padding: 30px 20px;
+    margin: 30px auto;
+    text-align: center;
+    max-width: 1000px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.seccion-videos h2 {
+    color: #FF6B6B;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.seccion-videos p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+
+.videos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
+.video {
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.video video {
+    width: 100%; /* Hace que el video sea responsivo */
+    height: auto;
+    border-radius: 10px;
+}
+
+.video h3 {
+    margin-top: 10px;
+    font-size: 1.2em;
+    color: #333;
+}
+/* Estilo para la sección de información */
+.informacion-golosinas {
+    background-color: #F8C471;
+    padding: 30px 20px;
+    margin: 30px auto;
+    text-align: center;
+    max-width: 1000px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.informacion-golosinas h2 {
+    color: #FF6B6B;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.informacion-golosinas p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+
+.informacion-golosinas ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.informacion-golosinas ul li {
+    margin: 10px 0;
+}
+
+.informacion-golosinas a {
+    font-size: 1.2em;
+    color: #FF6B6B;
+    text-decoration: none;
+    border-bottom: 2px solid #FF6B6B;
+    padding: 5px;
+    transition: all 0.3s ease;
+}
+
+.informacion-golosinas a:hover {
+    color: #fff;
+    background-color: #FF6B6B;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
